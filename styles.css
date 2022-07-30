@@ -15,6 +15,7 @@ body {
     background-color: var(--white);
     padding: 0;
     width: 1260px;
+    max-width: 100%;
     margin: auto;
     filter: drop-shadow(0 0 0 rgb(50, 50, 50));
 }
@@ -215,6 +216,10 @@ img {
     height: 40px;
 }
 
+svg {
+    color: red;
+}
+
 a {
     text-align: center;
 }
@@ -226,13 +231,14 @@ a {
     grid-auto-rows: minmax(100px, auto);
     justify-content: center;
     justify-items: center;
-    padding-bottom: 200px;
+    padding-top: 120px;
+    padding-bottom: 70px;
 }
 
 .googletooltip {
     grid-row: 2;
     grid-column: 1;
-    opacity: 1;
+    opacity: 0;
     transition: opacity 0.5s ease-out;
     width: fit-content;
     height: fit-content;
