@@ -12,3 +12,11 @@ for (i = 0; i < coll.length; i++) {
         }
     });
 }
+
+function toggle(id) {
+    if (id.style.opacity == 0) {
+        id.style.opacity = 1;
+    } else {
+        id.style.opacity = 0
+    }
+}
