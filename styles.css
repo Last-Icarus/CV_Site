@@ -46,6 +46,16 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    color: var(--black);
+    align-self: top;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: center;
+}
+
 p {
     text-align: justify;
     color: var(--black);
@@ -149,15 +159,18 @@ p {
 .card__title {
     color: var(--black);
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
+    padding-left: 10px;
 }
 
 .card__text {
     font-size: 24px;
     line-height: 1.4;
     font-weight: 600;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 .card__content {
@@ -208,6 +221,7 @@ img {
 }
 
 .skillpanel {
+    width: 25%;
     margin: auto;
     text-align: center;
 }
@@ -264,4 +278,12 @@ a {
     color: var(--white);
     padding: 20px;
     border-style: double;
+}
+
+ul {
+    list-style-type: disc;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
