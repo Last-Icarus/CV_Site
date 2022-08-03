@@ -21,9 +21,6 @@ body {
     filter: drop-shadow(0 0 0 rgb(50, 50, 50));
 }
 
-
-/* background-color: rgb(221, 113, 238); */
-
 h1 {
     text-align: center;
     color: var(--white);
@@ -70,6 +67,9 @@ p {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* Каркасные компоненты сайта */
+
 .slide {
     display: flex;
     width: 100%;
@@ -90,24 +90,32 @@ p {
     padding-top: 60px;
 }
 
-.button {
-    background-color: var(--white);
-    border: 1px solid var(--black);
-    color: var(--black);
-    padding: 0.5rem;
-    font-size: 20px;
+.stroke {
+    background: var(--white);
+    height: auto;
+    margin: 30px;
+    width: 10px;
+}
+
+.skillpanel {
+    width: 25%;
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    position: relative;
+    height: 300px;
+    margin: 30px;
+}
+
+.logo {
     cursor: pointer;
+    height: 40px;
 }
 
-.button:hover {
-    color: var(--white);
-    background-color: var(--black);
-}
 
-.button--block {
-    display: block;
-    width: 100%;
-}
+/* Карточки проектов */
 
 .cards {
     display: flex;
@@ -117,23 +125,19 @@ p {
     padding: 0;
 }
 
-.cards__item {
-    padding: 1rem;
-    min-width: 39rem;
-    width: 33.33333%;
-}
-
 .card {
     background-color: var(--white);
-    border-radius: 0.25rem;
     box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
-
-/* ------------------------------ */
+.cards__item {
+    padding: 1rem;
+    min-width: 39rem;
+    width: 33.33333%;
+}
 
 .card_image {
     height: auto;
@@ -152,9 +156,6 @@ p {
 .card_image:hover {
     filter: drop-shadow(0 0 4px rgb(50, 50, 50));
 }
-
-
-/* ------------------------------ */
 
 .card__title {
     color: var(--black);
@@ -179,6 +180,31 @@ p {
     flex-direction: column;
     padding: 1rem;
 }
+
+.button {
+    background-color: var(--white);
+    border: 1px solid var(--black);
+    color: var(--black);
+    padding: 0.5rem;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: var(--white);
+    background-color: var(--black);
+}
+
+ul {
+    list-style-type: disc;
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+
+/* Выдвежное меню */
 
 .collapsible {
     background-color: var(--orange);
@@ -207,37 +233,8 @@ p {
     transition: max-height 0.5s ease-out;
 }
 
-.stroke {
-    background: var(--white);
-    height: auto;
-    margin: 30px;
-    width: 10px;
-}
 
-img {
-    position: relative;
-    height: 300px;
-    margin: 30px;
-}
-
-.skillpanel {
-    width: 25%;
-    margin: auto;
-    text-align: center;
-}
-
-.logo {
-    cursor: pointer;
-    height: 40px;
-}
-
-svg {
-    color: red;
-}
-
-a {
-    text-align: center;
-}
+/* Обёртка для контактных ссылок */
 
 .wrapper {
     position: relative;
@@ -247,7 +244,7 @@ a {
     justify-content: center;
     justify-items: center;
     padding-top: 120px;
-    padding-bottom: 70px;
+    padding-bottom: 25px;
 }
 
 .googletooltip {
@@ -278,12 +275,4 @@ a {
     color: var(--white);
     padding: 20px;
     border-style: double;
-}
-
-ul {
-    list-style-type: disc;
-    font-size: 1.5rem;
-    padding-bottom: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
 }
