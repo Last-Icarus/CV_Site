@@ -12,6 +12,7 @@
 }
 
 body {
+    scroll-behavior: smooth;
     background-color: var(--white);
     padding: 0;
     min-width: 1260px;
